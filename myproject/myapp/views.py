@@ -65,6 +65,8 @@ def list(request):
 #            htmlBody+="<hr><hr>For data lovers, the entire JSON response from the image is available below!<hr><br>"
 #            htmlBody+=str(result)
             htmlBody+="<footer> <p>Designed by: <b>Sivaraman (@ShivaSitaraman) </b> Contact information: <a href=\"mailto:kssivaraman1993@gmail.com\">kssivaraman1993@gmail.com</a></p></footer>"
+            backButton="<a href=\""+SYSTEM_IP+":8000\">Back</a>"
+            htmlBody+=backButton
 
             return HttpResponse("<html><head><title>Goggly saw...</title></head><body> <hr><img src="+resourcePath+" alt=\"This server messes up the file name\" width=200,height=200> "+htmlBody+"</body></html>")
     else:

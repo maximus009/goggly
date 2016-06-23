@@ -7,6 +7,6 @@ Developed on Django 1.8.
 Instructions to use it:
 <code>$ sudo pip install django1.8</code><br>
 <code>$ git clone https://github.com/maximus009/goggly.git</code><br>
-<code>$ cd goggle</code><br>
+<code>$ cd goggly</code><br>
 <code>$ python manage.py migrate<br>
       $ python manage.py runserver </code>

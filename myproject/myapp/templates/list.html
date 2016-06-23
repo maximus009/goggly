@@ -3,16 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title>Goggly ::: MAX Goggle</title>
+        <style>
+        body
+        {
+            background-image: url("http://cdn.bbspy.co.uk/images/uploads/bb2014_eye_logo_black.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        </style>
     </head>
 
     <body>
+        <font color="yellow">
         <!-- Upload form. Note enctype attribute! -->
-        <h1> GOGGLY</h1><h4>=== It will tell you what it sees!! At this moment, Goggly can <ul>
-            <li>Detect faces,</li> 
-            <li>Describe what the image is about,</li>
-            <li>Point out landmarks,</li>
-            <li>Read text</li><br>Why don't you try it out? :)
-        <br> Upload an image to see what Goggly sees!<br></h4>
+        <h1> GOGGLY</h1><h3>=== Gives Image Insights!!</h3><h4>At this moment, Goggly can 
+        <ul>
+            <li>Detect and describe faces,</li> 
+            <li>Describe the image,</li>
+            <li>Identify geographic landmarks,</li>
+            <li>Read text</li><br>
+        </ul>
+        Why don't you try it out? :)
+        <br> Upload an image to see what Goggly sees!</h4>
         <form action="{% url "list" %}" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <p>{{ form.non_field_errors }}</p>
@@ -25,6 +37,7 @@
             </p>
             <input type="submit" value="Upload"/>
         </form>
+        </font>
     </body>
 
 </html>

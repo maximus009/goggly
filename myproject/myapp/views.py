@@ -67,6 +67,9 @@ def list(request):
             htmlBody+="<footer> <p>Designed by: <b>Sivaraman (@ShivaSitaraman) </b> Contact information: <a href=\"mailto:kssivaraman1993@gmail.com\">kssivaraman1993@gmail.com</a></p></footer>"
             backButton="<a href=\""+SYSTEM_IP+":8000\">Back</a>"
             htmlBody+=backButton
+            aboutMe = "<center><a target=_blank href=\"https://www.quora.com/profile/Shiva-Sitaraman/answers?sort=views\"><img src=\"https://assets.about.me/background/users/s/i/v/sivaramanks_1466757065_62.jpg\" width=200,height=200><br><h3>About Me</h3></a></center>"
+
+            htmlBody+=aboutMe
 
             return HttpResponse("<html><head><title>Goggly saw...</title></head><body> <hr><img src="+resourcePath+" alt=\"This server messes up the file name\" width=200,height=200> "+htmlBody+"</body></html>")
     else:

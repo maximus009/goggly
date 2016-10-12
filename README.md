@@ -13,4 +13,4 @@ Instructions to use it:
 
 Have not included the python file that makes the Cloud Vision calls to the API (for security reasons). Please edit the "myproject/myapp/views.py" accordingly, before launching the app.
 
-DISCLAIMER: Not really developed for distributive purposes;; Just on an experinmental basis. Peace!
+DISCLAIMER: Not really developed for distributive purposes;; Just on an experimental basis. Peace!

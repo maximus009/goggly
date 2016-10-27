@@ -5,6 +5,7 @@ Goggly was programmed using Google Cloud Vision API, to extract as much informat
 Developed on Django 1.8.
 
 Instructions to use it:
+<br>
 <code>$ sudo pip install django==1.8</code><br>
 <code>$ git clone https://github.com/maximus009/goggly.git</code><br>
 <code>$ cd goggly</code><br>
